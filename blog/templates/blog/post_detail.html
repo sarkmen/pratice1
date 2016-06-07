@@ -1,3 +1,6 @@
-{{post.title}}
-{{post.content}}
+<li>{{post.title}}</li>
+<li>{{post.content|linebreaks}</li>
 <img src='{{post.image.url}}'/>
+
+<hr/>
+<a href="{% url 'blog:index' %}">글 목록</a>
