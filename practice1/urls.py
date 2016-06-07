@@ -21,7 +21,7 @@ from django.shortcuts import redirect
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^blog/', include('blog.urls')),
+    url(r'^blog/', include('blog.urls', namespace='blog')),
     url(r'^$', lambda request: redirect('/blog/')),
 ]
 
